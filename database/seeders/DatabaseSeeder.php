@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
              'first_name' => 'Test',
              'last_name' => 'User',
              'email' => 'test@example.com',
-             'password' => 'secret',
+             'password' => bcrypt('password'),
          ]);
 
         \App\Models\Book::factory(8)->create();
